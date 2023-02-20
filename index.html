@@ -1,55 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidades absolutas y relativas</title>
-</head>
-<body>
-    <div>
-        <h1>
-            CSS Grid Layout
-        </h1>
-        <p>
-            CSS Grid layout contiene funciones de diseño dirigidas a los desarrolladores de aplicaciones web.<br> 
-            El CSS grid se puede utilizar para lograr muchos diseños diferentes. También se destaca por permitir<br> 
-            dividir una página en áreas o regiones principales, por definir la relación en términos de tamaño,<br> 
-            posición y capas entre partes de un control construido a partir de primitivas HTML.<br>
-            Al igual que las tablas, el grid layout permite a un autor alinear elementos en columnas y filas.<br> 
-            Sin embargo, con CSS grid son posibles muchos más diseños y de forma más sencilla que con las tablas.<br> 
-            Por ejemplo, los elementos secundarios de un contenedor de cuadrícula podrían posicionarse para que<br> 
-            se solapen y se superpongan, de forma similar a los elementos posicionados en CSS.
-        </p>
-    </div>
-    <div>
-        <h3>
-           Propiedades:
-        </h3>
-        <ul>
-            <li>grid-template-columns: define el nombre de las líneas y las funciones de tamaño de línea de grid columns.</li>
-            <li>grid-template-rows: define el nombre de las líneas y las funciones de tamaño de línea de grid rows.</li>
-            <li>grid-template-areas: especifica nombres para cada una de las grid areas.</li>
-            <li>grid-template: CSS property is a shorthand property for defining grid columns, grid rows, and grid areas.</li>
-            <li>grid-auto-columns: especifíca el tamaño de una columna de cuadrícula creada implícitamente</li>
-            <li>grid-auto-rows: de CSS especifíca el tamaño de una nueva fila creada de forma implícita.</li>
-            <li>grid-auto-flow: CSS como fluyen los elementos de forma automatica en el grid</li>
-            <li>grid: es un shorthand que permite definir todas las propiedades grid explícitas, implícitas  y relativas en una sola declaración.</li>
-            <li>grid-row-start: CSS property specifies a grid item's start position within the grid row</li>
-            <li>grid-column-start: CSS property specifies a grid item's start position within the grid column</li>
-            <li>grid-row-end: CSS property specifies a grid item's end position within the grid row</li>
-            <li>grid-column-end: CSS property specifies a grid item's end position within the grid column</li>
-            <li>grid-row: CSS shorthand property specifies a grid item's size and location within a grid row</li>
-            <li>grid-column: CSS shorthand property specifies a grid item's size and location within a grid column</li>
-            <li>grid-area: CSS shorthand property specifies a grid item's size and location within a grid</li>
-            <li>row-gap: CSS property sets the size of the gap (gutter) between an element's rows.</li>
-            <li>grid-column-gap: especifica el gutter entre  los grid columns.</li>
-            <li>rid-gap: es una propiedad abreviada shorthand para grid-row-gap y grid-column-gap que especifica los canales entre las filas y las columnas de la cuadrícula.</li>
+<!--El Módulo de Caja Flexible, comúnmente llamado flexbox, fue diseñado como un modelo unidimensional de layout, 
+    y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades
+    de alineación. Este artículo hace un repaso de las principales características de flexbox, las que exploraremos con 
+    mayor detalle en el resto de estas guías.
+    Cuando describimos a flexbox como unidimensional destacamos el hecho que flexbox maneja el layout en una sola dimensión 
+    a la vez — ya sea como fila o como columna. Esto contrasta con el modelo bidimensional del Grid Layout de CSS, el cual 
+    controla columnas y filas a la vez.
 
-        </ul>
-    </div>
+    ----Los dos ejes de flexbox---
 
-    
+    Cuando trabajamos con flexbox necesitamos pensar en términos de dos ejes — el eje principal y el eje cruzado. 
+    El eje principal está definido por la propiedad flex-direction, y el eje cruzado es perpendicular a este. Todo 
+    lo que hacemos con flexbox está referido a estos dos ejes, por lo que vale la pena entender cómo trabajan desde el principio.
 
-</body>
-</html>
+    --El eje principal--
+
+    El eje principal está definido por flex-direction, que posee cuatro posibles valores:
+
+    row
+    row-reverse
+    column
+    column-reverse
+
+    --El eje cruzado--
+
+    El eje cruzado va perpendicular al eje principal, y por lo tanto si flex-direction (del eje principal) es row o row-reverse 
+    el eje cruzado irá por las columnas.
+-->
