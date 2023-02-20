@@ -4,53 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@media</title>
+    <title>Unidades absolutas y relativas</title>
 </head>
 <body>
     <div>
         <h1>
-            La regla-at CSS @media asocia un grupo de declaraciones anidadas, en un bloque CSS delimitado por llaves, <br>
-            con una condición definida por un media query. La regla-at @media puede ser usada no solo en el nivel superior de <br>
-            la hoja de estilos, sino también dentro de cualquier grupo de reglas condicionales.<br>
-            La regla-at @media puede ser accesible por medio de la interfaz de modelo de objeto CSSMediaRule
+            Unidades de longitud absoluta
         </h1>
+        <p>
+            Todas las unidades siguientes son unidades de longitud absoluta: no son relativas a nada más <br>
+            y en general se considera que siempre tienen el mismo tamaño.
+        </p>
     </div>
     <div>
         <h3>
-            Sintaxis
+            cm 	Centímetros 	1cm = 96px/2,54<br>
+            mm 	Milímetros 	1mm = 1/10 de 1cm<br>
+            Q 	Cuartos de milímetros 	1Q = 1/40 de 1cm<br>
+            in 	Pulgadas 	1in = 2,54cm = 96px<br>
+            pc 	Picas 	1pc = 1/6 de 1in<br>
+            pt 	Puntos 	1pt = 1/72 de 1in<br>
+            px 	Píxeles 	1px = 1/96 de 1in<br>
         </h3>
-        <h4>
-            @media = 
-            @media <media-query-list> { <stylesheet> }  
-        </h4>
+    
     </div>
     <div>
-        <h2>
-           Caracteristicas de los medios
-        </h2>
-        <ul>
-            <li>width: anchura del viewport</li>
-            <li>height: Altura del viewport</li>
-            <li>aspect-ratio: Relación de aspecto anchura-altura del viewport</li>
-            <li>orientacion: Orientación del viewport</li>
-            <li>resolution: Densidad de pixeles del dispositivo</li>
-            <li>scan: Proceso de escaneo del dispositivo</li>
-            <li>grid: ¿El dispositivo es un grid o un mapa de bits?</li>
-            <li>update-frequency: Qué tan rápido (si lo hace) puede el dispositivo modificar la apariencia del contenido</li>
-            <li>overflow-block:Cómo maneja el dispositivo el contenido que excede los límites del viewport a lo largo del eje de bloque</li>
-            <li>overflow-inline: ¿Puede desplazarse hacia el contenido que excede los límites del viewport?</li>
-            <li>color: Componente de número de bits por color del dispositivo, o cero si el dispositivo no es a color.</li>
-            <li>color-index: Número de entradas en la tabla de búsqueda de color del dispositivo, o cero si el dispositivo no usa una tabla.</li>
-            <li>display-mode: Modo de visualización de la aplicación, según se especifique en la propiedad display del manifiesto de la aplicación web.</li>
-            <li>monochrome: Bits por pixel en el buffer de marco monocromático del dispositivo, o 0 si el dispositivo no es monocromático.</li>
-            <li>inverted-colors: ¿El agente usuario o el Sistema Operativo está invirtiendo los colores?</li>
-            <li>pointer: ¿El mecanismo de entrada principal es un dispositivo apuntador? y de ser así, ¿qué tan preciso es?</li>
-            <li>hover: ¿El mecanismo de entrada principal permite que el usuario posicione el puntero sobre los elementos?</li>
-            <li>any-pointer: ¿Hay algún mecanismo de entrada que sea dispositivo apuntador? y de ser así, ¿qué tan preciso es éste?</li>
-            <li>any-hover: ¿Algún mecanismo de entrada disponible permite que el usuario posicione el puntero sobre los elementos?</li>
-            <li>light-level:Nivel de luz ambiental actual</li>
-            <li>scripting: ¿Se soporta lenguaje de script (p.ej. JavaScript)?</li>
-        </ul>
+        <h1>
+            Unidades de longitud relativa
+        </h1>
+        <p>
+            Las unidades de longitud relativa son relativas a algo más, por ejemplo, al tamaño de letra del<br> 
+            elemento principal o al tamaño de la ventana gráfica. La ventaja de usar unidades relativas es<br> 
+            que con una planificación cuidadosa puedes lograr que el tamaño del texto u otros elementos escalen<br> 
+            en relación con todo lo demás en la página. En la tabla siguiente se enumeran algunas de las unidades<br> 
+            más útiles para el desarrollo web.
+        </p>
+    </div>
+    <div>
+        <h3>
+            em 	Tamaño de letra del elemento padre.<br>
+            ex 	Altura x de la fuente del elemento.<br>
+            ch 	La medida de avance (ancho) del glifo "0" de la letra del elemento.<br>
+            rem 	Tamaño de la letra del elemento raíz.<br>
+            lh 	Altura de la línea del elemento.<br>
+            vw 	1% del ancho de la ventana gráfica.<br>
+            vh 	1% de la altura de la ventana gráfica.<br>
+            vmin 	1% de la dimensión más pequeña de la ventana gráfica.<br>
+            vmax 	1% de la dimensión más grande de la ventana gráfica.<br>
+        </h3>
+    
     </div>
 
     
